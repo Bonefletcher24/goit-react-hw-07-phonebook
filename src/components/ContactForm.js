@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { addContact } from '../redux/contactsSlice';
+import './ContactForm.css';
 
 const ContactForm = () => {
   const [name, setName] = useState('');
@@ -9,26 +10,27 @@ const ContactForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(addContact({ name, phone }));
-    setName('');
-    setPhone('');
+    if (name && phone) {
+      dispatch(addContact({ name, phone }));
+      setName('');
+      setPhone('');
+    }
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="contact-form" onSubmit={handleSubmit}>
+      <h2>Add Contact</h2>
       <input
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
         placeholder="Name"
-        required
       />
       <input
         type="text"
         value={phone}
         onChange={(e) => setPhone(e.target.value)}
         placeholder="Phone"
-        required
       />
       <button type="submit">Add Contact</button>
     </form>

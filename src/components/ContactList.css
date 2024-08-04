@@ -1,0 +1,11 @@
+/* src/components/ContactList.css */
+.contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px; /* Отступы между элементами */
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start; /* Выравнивание элементов по левому краю */
+    list-style: none; /* Убираем стандартные маркеры списка */
+  }
+  

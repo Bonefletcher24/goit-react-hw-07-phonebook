@@ -1,0 +1,30 @@
+/* src/components/Filter.css */
+.filter-container {
+    margin-bottom: 20px; /* Отступ снизу */
+    display: flex;
+    align-items: center; /* Центрирование по вертикали */
+    gap: 10px; /* Отступ между элементами */
+  }
+  
+  .filter-container input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: serif; /* Шрифт для поля ввода */
+    flex: 1; /* Поле ввода занимает всю доступную ширину */
+  }
+  
+  .filter-container button {
+    background-color: #2196f3; /* Синий фон */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-family: serif; /* Шрифт для кнопки */
+  }
+  
+  .filter-container button:hover {
+    background-color: #1976d2; /* Темнее при наведении */
+  }
+  
