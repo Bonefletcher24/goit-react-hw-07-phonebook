@@ -16,7 +16,7 @@
   .contact-form input {
     margin-bottom: 10px;
     padding: 10px;
-    width: calc(100% - 22px); /* Adjust width to fit padding and border */
+    width: calc(100% - 22px); 
     border: 1px solid #ccc;
     border-radius: 4px;
   }
