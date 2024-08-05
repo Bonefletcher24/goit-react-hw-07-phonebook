@@ -4,8 +4,8 @@
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 10px;
-    width: 200px; /* Ширина элемента списка */
-    box-sizing: border-box; /* Включение границ и отступов в ширину элемента */
+    width: 200px; 
+    box-sizing: border-box; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -21,6 +21,6 @@
   }
   
   .contact-item button:hover {
-    background-color: #d32f2f; /* Темнее при наведении */
+    background-color: #d32f2f; 
   }
   
